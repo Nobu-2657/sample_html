@@ -9,12 +9,12 @@ window.addEventListener('load', function () {
             $menu.classList.add('is-show');
         }
     });
+});
 
-    $(function () {
-        $(window).scroll(function () {
-            $("nav.floating").stop().animate(
-                {"top": $(window).scrollTop() + 100}, 
-            500);
-        });
+$(function () {
+    $(window).scroll(function () {
+        $("nav.floating").stop().animate(
+            {"top": $(window).scrollTop() + 100}, 
+        500);
     });
 });
